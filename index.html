@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="GitHubController">
+  <head>
+    <title>GitHub Follower Search</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <div class="container-fluid outerdiv">
+
+      <noscript>
+        <div class="nojs">Javascript is either disabled or not supported in your browser. Please enable it or use a Javascript enabled browser.</div>
+      </noscript>
+        <h1> GitHub Follower Search</h1>
+      <div class="animated zoomInRight">
+        <div class="input-group search-bar"><span>
+          <input type="text" ng-model="search" class="form-control" placeholder="Enter GitHub username" autofocus />
+          <button type="submit" class="btn btn-secondary btn-sm" ng-click="searchUser()">Submit</button>
+        </span>
+        </div>
+
+        <span id="main-info" ng-include="'partials/main-info.html'" class="col-md-6"></span>
+
+        <span id="related-results" ng-include="'partials/related-results.html'" class="col-md-6"></span>
+      </div>
+    </div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

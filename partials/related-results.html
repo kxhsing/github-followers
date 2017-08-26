@@ -1,0 +1,18 @@
+<div ng-if="followers">
+<div>
+  <h3>Followers: {{followers.length}} </h3><hr>
+
+
+    <span ng-repeat="follower in followers" class="box">
+        <a href="#" ng-click="update(follower.login)">
+            <img ng-src="{{ follower.avatar_url }}" class="follower-img"></br>
+                {{ follower.login }}
+        </a>
+    </span>
+
+
+
+</div>
+</div>
+
+

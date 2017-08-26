@@ -1,0 +1,12 @@
+{
+  "name": "github-users",
+  "version": "1.0.0",
+  "description": "fastr ==",
+  "main": "index.js",
+  "repository": "git@github.com:kxhsing/github-followers.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
