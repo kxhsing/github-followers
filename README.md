@@ -1,6 +1,6 @@
 GitHub Followers
 ===========================
-App that allows for a user to search for a GitHub username and find their followers.
+App that allows for a user to search for a GitHub username and find their followers.</br>
 **[Try out the deployed application here!](https://find-github-followers.herokuapp.com/)**
 
 ## Table of Contents
