@@ -27,6 +27,9 @@ When the user clicks on a follower, the app will update the search query to that
 **Technical Choices**</br>
 I decided to go with a simple SPA using **AngularJS, HTML, and some CSS and Bootstrap** for styling. Since there was no need for a database and everything was done client side I did not feel it necessary to use other parts of the MEAN stack. I'm fairly new to building apps with Javascript (this is my second JS app), as Python and Flask has been my primary language and framework for building web applications, but I had a lot of fun learning how to develop applications with Javascript as the core language!
 
+**Tradeoffs**</br>
+During development, to increase the rate limiting for requests to the GitHub API, I generated a personal access token and included it in my request parameters to increase it from 60/hr to 5000/hr (and exported as an environmental variable into my app). However, for deployment purposes I removed my PAT, which is a tradeoff in terms of being able to query for more results per hour.
+
 **Features to Consider**</br>
 If I had more time, these would be additional features I would implement: 
 
@@ -35,9 +38,6 @@ If I had more time, these would be additional features I would implement:
 * Option for users to follow the profile of the searched username on GitHub, which would require a two-step authentication process.
 
 * Pagination that allows navigation to previous and next set of followers.
-
-**Tradeoffs**</br>
-During development, to increase the rate limiting for requests to the GitHub API, I generated a personal access token and included it in my request parameters to increase it from 60/hr to 5000/hr (and exported as an environmental variable into my app). However, for deployment purposes I removed my PAT, which is a tradeoff in terms of being able to query for more results per hour.
 
 **Additional Notes**</br>
 I'd like to note that the helper function (findLastPage) in app.js I used to parse the GitHub API response headers I found from this [Gist discussion](https://gist.github.com/niallo/3109252).
