@@ -37,9 +37,6 @@ During development, to increase the rate limiting for requests to the GitHub API
 **Additional Notes**</br>
 I'd like to note that the helper function (findLastPage) in app.js I used to parse the GitHub API response headers I found from this [Gist discussion](https://gist.github.com/niallo/3109252).
 
-There were some boilerplate code for setting up the folder structure that I found from [Scotch.io](https://scotch.io/), which has been instrumental in my learning of Node.js and AngularJS.
-
-
 ## <a name="install"></a>Installation
 
 To run the job queue:
