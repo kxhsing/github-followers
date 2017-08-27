@@ -1,13 +1,13 @@
 GitHub Followers
 ===========================
 App that allows for a user to search for a GitHub username and find their followers.</br>
-**[Try out the deployed application here!](https://find-github-followers.herokuapp.com/)**
+**[Try out the deployed application!](https://find-github-followers.herokuapp.com/)**
 
 ## Table of Contents
 * [Problem & Solution](#process)
 * [Technologies](#technologies)
 * [Installation](#install)
-* [Public Profile](#author)
+* [Profile Links](#author)
 * [Other Project: ChefBox](#projects)
 
 ## <a name="process"></a>Problem & Solution
@@ -64,7 +64,7 @@ http-server -o
 You can now start using the app!
 
 
-## <a name="author"></a>Public Profile
+## <a name="author"></a>Profile Links
 Hi! My name is [Karen Hsing](https://www.linkedin.com/in/karenhsing/). I graduated from Hackbright Academy's Software Engineering Fellowship Program, an engineering bootcamp for women in San Francisco (graduation: April 2017). 
 
 Prior to Hackbright I was an account manager at a marketing agency where I led our marketing team and worked with 15 different clients from the tech, lifestyle, and hospitality industries to create personalized solutions for their different marketing needs, including branding, digital marketing, event sponsorships, and more.
