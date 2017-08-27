@@ -27,7 +27,7 @@ When the user clicks on a follower, the app will update the search query to that
 **Technical Choices**</br>
 I decided to go with a simple SPA using **AngularJS, HTML, and some CSS and Bootstrap** for styling. Since there was no need for a database and everything was done client side I did not feel it necessary to use other parts of the MEAN stack. I'm fairly new to building apps with Javascript, as Python and Flask has been my primary language and framework for building web applications, but I had a lot of fun learning how to develop applications with Javascript as the core language!
 
-If given more time, I would have liked to included a feature to give the top 10 suggestions for usernames if the user input was invalid or returned multiple search results. For instance, if the user searched "kx", the app would provide 10 username suggestions that starts with those letters. 
+If given more time, I would have liked to include a feature to suggest 10 alternative choices usernames if the user input was invalid or returned multiple search results. For instance, if the user searched "kx", the app would provide 10 username suggestions that starts with those letters. 
 
 Another feature to add if given more time would be to add the option for users to follow the profile of the searched username on GitHub, which would have required a two-step authentication process.
 
