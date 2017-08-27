@@ -25,15 +25,19 @@ When the user clicks on a follower, the app will update the search query to that
 ## <a name="technologies"></a>Technologies
 
 **Technical Choices**</br>
-I decided to go with a simple SPA using **AngularJS, HTML, and some CSS and Bootstrap** for styling. Since there was no need for a database and everything was done client side I did not feel it necessary to use other parts of the MEAN stack. I'm fairly new to building apps with Javascript, as Python and Flask has been my primary language and framework for building web applications, but I had a lot of fun learning how to develop applications with Javascript as the core language!
+I decided to go with a simple SPA using **AngularJS, HTML, and some CSS and Bootstrap** for styling. Since there was no need for a database and everything was done client side I did not feel it necessary to use other parts of the MEAN stack. I'm fairly new to building apps with Javascript (this is my second JS app), as Python and Flask has been my primary language and framework for building web applications, but I had a lot of fun learning how to develop applications with Javascript as the core language!
 
 If given more time, I would have liked to include a feature to suggest 10 alternative choices usernames if the user input was invalid or returned multiple search results. For instance, if the user searched "kx", the app would provide 10 username suggestions that starts with those letters. 
 
 Another feature to add if given more time would be to add the option for users to follow the profile of the searched username on GitHub, which would have required a two-step authentication process.
 
-
 **Tradeoffs**</br>
 During development, to increase the rate limiting for requests to the GitHub API, I generated a personal access token and included it in my request parameters to increase it from 60/hr to 5000/hr (and exported as an environmental variable into my app). However, for deployment purposes I removed my PAT, which is a tradeoff in terms of being able to query for more results per hour.
+
+**Additional Notes**</br>
+I'd like to note that the helper function (findLastPage) in app.js I used to parse the GitHub API response headers I found from this [Gist discussion](https://gist.github.com/niallo/3109252).
+
+There were some boilerplate code for setting up the folder structure that I found from [Scotch.io](https://scotch.io/), which has been instrumental in my learning of Node.js and AngularJS.
 
 
 ## <a name="install"></a>Installation
