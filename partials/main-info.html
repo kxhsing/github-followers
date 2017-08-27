@@ -1,11 +1,11 @@
 <div ng-if="details.login">
   <span>
   <img ng-src="{{ details.avatar_url }}"></br>
-  <h3>{{ details.name }} | <a href="{{ details.html_url }}" target="_blank">{{ details.login }}</h3></a></br>
-  <!-- <h4>Followers: {{details.followers}}</h4> -->
+  <h3>{{ details.name }} | <a href="{{ details.html_url }}" target="_blank">{{ details.login }}</h3></a>
   </span> 
 
+</div>
 
-<div ng-if="!details.login">
-  No results found.
+<div ng-if="details.message">
+  No results found. Please enter a valid GitHub username!
 </div>

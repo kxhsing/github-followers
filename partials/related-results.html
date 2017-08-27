@@ -1,18 +1,22 @@
 <div ng-if="followers">
-<div>
-  <h3>Followers: {{followers.length}} </h3><hr>
+    <div>
+        <h3>Followers: <span ng-model="followercount">{{followercount}}</span> 
 
+        <span ng-if="followercount > 30">
+            <button type="submit" class="btn btn-primary btn-sm" ng-model="loadbtn" ng-click="loadMoreFollowers()" ng-disabled="loadbtn == 1">Load More</button>
+        </span>
 
-    <span ng-repeat="follower in followers" class="box">
-        <a href="#" ng-click="update(follower.login)">
-            <img ng-src="{{ follower.avatar_url }}" class="follower-img"></br>
-                {{ follower.login }}
-        </a>
-    </span>
+        </h3><hr>
 
+        <span ng-repeat="follower in followers" class="box">
+            <a href="#" ng-click="update(follower.login)">
+                <img ng-src="{{ follower.avatar_url }}" class="follower-img"></br>
+                    {{ follower.login }}
+            </a>
+        </span>
 
-
+    </div>
 </div>
-</div>
+
 
 
